@@ -1,0 +1,7 @@
+.contenido-carrusel {
+    display: none;
+}
+
+.contenido-carrusel.activo {
+    display: block;
+}
