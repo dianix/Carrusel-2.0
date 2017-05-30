@@ -1,29 +1,26 @@
 var target = 0;
 
 var cargarPagina = function () {
-	// Elementos
-	var botones = document.querySelectorAll(".control");
-	var anterior = document.querySelector(".anterior");
-	var siguiente = document.querySelector(".siguiente");
+	var botones = $(".control");
+	var anterior = $(".anterior");
+	var siguiente = $(".siguiente");
 	
-	// Eventos
-	botones.forEach(function (boton) {
-		boton.addEventListener("click", cambiarImagen);
-	});
-	anterior.addEventListener("click", anteriorImagen);
-	siguiente.addEventListener("click", siguienteImagen);
+	botones.click(cambiarImagen);
+	anterior.click(anteriorImagen);
+	siguiente.click(siguienteImagen);
 };
 
 var cambiarImagen = function () {
-	target = parseInt(this.dataset.target);
+	target = parseInt($(this).data("target"));
+    //console.log(target)
 	mostrarImagen(target);
 };
 
 var mostrarImagen = function (target) {
-	var imagenActual = document.querySelector("div.activo");
-	var imagenSiguiente = document.querySelector("div[data-imagen='" + target + "']");
-	imagenActual.classList.remove("activo");
-	imagenSiguiente.classList.add("activo");
+	var imagenActual = $("div.activo");
+	var imagenSiguiente = $("div[data-imagen='" + target + "']");
+	imagenActual.removeClass("activo");
+	imagenSiguiente.addClass("activo");
 };
 
 var anteriorImagen = function (e) {
@@ -41,4 +38,4 @@ var siguienteImagen = function (e) {
 };
 
 
-window.addEventListener("load", cargarPagina);
+$(document).ready(cargarPagina);

@@ -7,34 +7,43 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-<!--    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />-->
-<!--    <script src="https://use.fontawesome.com/e7261129df.js"></script>-->
+    <!--    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />-->
+    <!--    <script src="https://use.fontawesome.com/e7261129df.js"></script>-->
 </head>
 
-<body class="teal darken-4 text-center">
-    <section class="carrusel">
-        <div data-imagen="0" class="contenido-carrusel activo">
-            <img src="assets/imgs/macro-dew-drops.jpg" alt="Imagen 1" />
+<body class="teal darken-4">
+    <header class="white-text center">
+        <h1>Carrusel jQuery Reloaded</h1>
+    </header>
+    <section class="container-fluid">
+        <div class="row">
+            <div class="carrusel col s8 push-s2">
+                <div data-imagen="0" class="contenido-carrusel activo">
+                    <img src="assets/imgs/macro-dew-drops.jpg" alt="Imagen 1" />
+                </div>
+                <div data-imagen="1" class="contenido-carrusel ">
+                    <img src="assets/imgs/macro_cover.jpg" alt="Imagen 2" />
+                </div>
+                <div data-imagen="2" class="contenido-carrusel ">
+                    <img src="assets/imgs/macros.jpg" alt="Imagen 3" />
+                </div>
+                <div data-imagen="3" class="contenido-carrusel">
+                    <img src="assets/imgs/nature-spiral.jpg" alt="Imagen 4" />
+                </div>
+            </div>
         </div>
-        <div data-imagen="1" class="contenido-carrusel ">
-            <img src="assets/imgs/macro_cover.jpg" alt="Imagen 2" />
-        </div>
-        <div data-imagen="2" class="contenido-carrusel ">
-            <img src="assets/imgs/macros.jpg" alt="Imagen 3" />
-        </div>
-        <div data-imagen="3" class="contenido-carrusel">
-            <img src="assets/imgs/nature-spiral.jpg" alt="Imagen 4" />
+        <div class="row">
+            <div class="controles col">
+                <a href="#" class="anterior">&#10094;</a>
+                <button type="button" data-target="0" class="control"></button>
+                <button type="button" data-target="1" class="control"></button>
+                <button type="button" data-target="2" class="control"></button>
+                <button type="button" data-target="3" class="control"></button>
+                <a href="#" class="siguiente">&#10095;</a>
+            </div>
         </div>
     </section>
-    <section class="controles">
-        <a href="#" class="anterior">&#10094;</a>
-        <button type="button" data-target="0" class="control"></button>
-        <button type="button" data-target="1" class="control"></button>
-        <button type="button" data-target="2" class="control"></button>
-        <button type="button" data-target="3" class="control"></button>
-        <a href="#" class="siguiente">&#10095;</a>
-    </section>
-    
+
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/app.js"></script>
 </body>
