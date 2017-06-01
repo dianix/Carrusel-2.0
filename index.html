@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <!--    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />-->
-    <!--    <script src="https://use.fontawesome.com/e7261129df.js"></script>-->
 </head>
 
-<body class="teal darken-4">
-    <header class="white-text center">
-        <h1>Carrusel jQuery Reloaded</h1>
+<body class="brown darken-4">
+    <header class="nav-wrapper white-text center">
+        <nav class="nav-wrapper cyan darken-1">
+            <a href="#" class="brand-logo center">Carrusel jQuery 2.0</a>
+        </nav>
     </header>
-    <section class="container-fluid">
+    <section class="contenedor-carrusel container-fluid">
         <div class="row">
-            <div class="carrusel col s8 push-s2">
+            <div class="carrusel col s12 m8 push-m2">
                 <div data-imagen="0" class="contenido-carrusel activo">
                     <img src="assets/imgs/macro-dew-drops.jpg" alt="Imagen 1" />
                 </div>
@@ -32,14 +32,16 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="controles col">
-                <a href="#" class="anterior">&#10094;</a>
-                <button type="button" data-target="0" class="control"></button>
-                <button type="button" data-target="1" class="control"></button>
-                <button type="button" data-target="2" class="control"></button>
-                <button type="button" data-target="3" class="control"></button>
-                <a href="#" class="siguiente">&#10095;</a>
+        <div class="botonera row">
+            <div class="col s12 m8 push-m2 flex">
+                <a href="#" class="anterior white-text">&#10094;</a>
+                <div class="controles">
+                    <button type="button" data-target="0" class="control"></button>
+                    <button type="button" data-target="1" class="control"></button>
+                    <button type="button" data-target="2" class="control"></button>
+                    <button type="button" data-target="3" class="control"></button>
+                </div>
+                <a href="#" class="siguiente white-text">&#10095;</a>
             </div>
         </div>
     </section>
