@@ -1,3 +1,11 @@
+body {
+    font-family: 'Tahoma', sans-serif;
+}
+
+.contenedor-carrusel {
+    margin-top: 1rem;
+}
+
 .contenido-carrusel {
     display: none;
 }
@@ -6,6 +14,34 @@
     display: block;
 }
 
-.contenido-carrusel>img{
+.contenido-carrusel>img {
     width: 100%;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controles button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.controles button:hover {
+    background-color: #57c5ff;
+}
+
+.botonera a.anterior,
+.botonera a.siguiente {
+    font-size: 2rem;
+}
+
+.botonera a.anterior:hover,
+.botonera a.siguiente:hover {
+    color: #00a7ff;
 }
